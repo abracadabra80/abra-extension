@@ -1,0 +1,108 @@
+<!doctype html>
+<!-- Source for the README preview image. Regenerate the PNG with:
+     npm run browser && node scripts/gen-preview.mjs -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;650&display=block"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1280px;
+        height: 640px;
+        overflow: hidden;
+      }
+      body {
+        font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+        background: #f5f5f7;
+        color: #1d1d1f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 14px; /* slight optical lift */
+      }
+      .dots {
+        display: flex;
+        gap: 9px;
+        margin-bottom: 40px;
+      }
+      .dots span {
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+      }
+      h1 {
+        font-size: 68px;
+        font-weight: 650;
+        letter-spacing: -0.032em;
+        line-height: 1.05;
+      }
+      .sub {
+        margin-top: 22px;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+        color: #6e6e73;
+      }
+      .card {
+        margin-top: 56px;
+        display: inline-flex;
+        align-items: center;
+        background: #ffffff;
+        border: 1px solid #e4e4e9;
+        border-radius: 16px;
+        padding: 22px 30px;
+        box-shadow:
+          0 1px 2px rgba(0, 0, 0, 0.04),
+          0 16px 40px rgba(0, 0, 0, 0.06);
+        font-family: 'Cascadia Mono', Consolas, ui-monospace, monospace;
+        font-size: 20px;
+        letter-spacing: -0.01em;
+        white-space: nowrap;
+      }
+      .card .cmd {
+        color: #1d1d1f;
+        font-weight: 600;
+      }
+      .card .idea {
+        color: #86868b;
+        margin-left: 12px;
+      }
+      .card .cursor {
+        display: inline-block;
+        width: 2px;
+        height: 24px;
+        background: #1d1d1f;
+        margin-left: 10px;
+        vertical-align: -4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dots">
+      <span style="background: #4285f4"></span>
+      <span style="background: #ea4335"></span>
+      <span style="background: #fbbc04"></span>
+      <span style="background: #34a853"></span>
+    </div>
+    <h1>Make any Chrome extension.</h1>
+    <div class="sub">Just describe it. An AI agent builds it, tests it, and ships it.</div>
+    <div class="card">
+      <span class="cmd">/chrome-extension</span>
+      <span class="idea">a pomodoro timer that blocks distracting sites</span>
+      <span class="cursor"></span>
+    </div>
+  </body>
+</html>
